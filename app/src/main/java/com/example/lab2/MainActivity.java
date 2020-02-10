@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 //        Toast.makeText(MainActivity.this, myTextField.getText().toString(), Toast.LENGTH_LONG).show();
 //        Log.i("Info", "Button Pressed");
 
+        goToActivity2(str);
     }
 
     public void goToActivity2(String s) {
