@@ -16,16 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
         EditText myTextField = (EditText) findViewById(R.id.myTextField);
         String str = myTextField.getText().toString();
-        double myNum = Integer.parseInt(str);
-        myNum = myNum * 0.77;
 //        Toast.makeText(MainActivity.this, myTextField.getText().toString(), Toast.LENGTH_LONG).show();
 //        Log.i("Info", "Button Pressed");
 
-        goToActivity2(myNum);
-
+        goToActivity2(str);
     }
 
-    public void goToActivity2(double s) {
+    public void goToActivity2(String s) {
         Intent intent = new Intent(this, Main2Activity.class);
         intent.putExtra("message", s);
         startActivity(intent);
